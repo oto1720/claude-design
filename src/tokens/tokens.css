@@ -1,0 +1,58 @@
+:root {
+  /* -----------------------------------------------------------------------
+   * Brand palette — keep to these 5 deliberate colors.
+   * Neutral surface/border tints below are derived helpers, not new "colors".
+   * --------------------------------------------------------------------- */
+  --ds-color-primary: #1f2a44; /* 濃紺: headings, emphasis, rules, quote bar */
+  --ds-color-accent: #e8794a; /* オレンジ: buttons, links, highlights */
+  --ds-color-bg: #ffffff; /* 背景 */
+  --ds-color-text: #222222; /* 本文 */
+  --ds-color-text-muted: #6b7280; /* サブ文字（補足・注記） */
+
+  /* Interaction shades derived from the accent */
+  --ds-color-accent-hover: #d96a3c;
+  --ds-color-accent-active: #c85d30;
+
+  /* Text drawn on top of a filled color */
+  --ds-color-on-accent: #ffffff;
+  --ds-color-on-primary: #ffffff;
+
+  /* Neutral surfaces / borders (subtle greys, not counted as brand colors) */
+  --ds-color-surface: #ffffff;
+  --ds-color-surface-muted: #f5f6f8;
+  --ds-color-border: #e5e7eb;
+
+  /* -----------------------------------------------------------------------
+   * Typography — Noto Sans JP only, two weights (Regular / Bold).
+   * --------------------------------------------------------------------- */
+  --ds-font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --ds-font-weight-regular: 400; /* 本文 */
+  --ds-font-weight-bold: 700; /* 見出し・強調・ボタン */
+
+  --ds-font-size-sm: 13px;
+  --ds-font-size-md: 15px;
+  --ds-font-size-lg: 18px;
+  --ds-font-size-h2: 24px;
+  --ds-font-size-h1: 32px;
+  --ds-line-height: 1.7; /* たっぷりした行間 */
+  --ds-line-height-heading: 1.35;
+
+  /* -----------------------------------------------------------------------
+   * Spacing — generous by default (詰め込まない).
+   * --------------------------------------------------------------------- */
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 16px;
+  --ds-space-4: 24px;
+  --ds-space-5: 40px;
+  --ds-space-6: 64px;
+
+  /* Radius */
+  --ds-radius-sm: 6px;
+  --ds-radius-md: 8px;
+  --ds-radius-pill: 999px;
+
+  /* Focus ring (accent) */
+  --ds-focus-ring: 0 0 0 3px rgba(232, 121, 74, 0.35);
+}

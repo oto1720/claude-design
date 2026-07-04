@@ -1,0 +1,21 @@
+.ds-callout {
+  font-family: var(--ds-font-family);
+  font-size: var(--ds-font-size-md);
+  line-height: var(--ds-line-height);
+  padding: var(--ds-space-3) var(--ds-space-4);
+}
+
+/* note = 引用・注記: navy left rule, muted grey text, no fill. */
+.ds-callout--note {
+  border-left: 3px solid var(--ds-color-primary);
+  color: var(--ds-color-text-muted);
+  background-color: transparent;
+}
+
+/* emphasis = 図の強調: accent left band with a light accent tint. */
+.ds-callout--emphasis {
+  border-left: 4px solid var(--ds-color-accent);
+  color: var(--ds-color-text);
+  background-color: rgba(232, 121, 74, 0.08);
+  border-radius: 0 var(--ds-radius-sm) var(--ds-radius-sm) 0;
+}

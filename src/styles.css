@@ -1,0 +1,8 @@
+/* The single stylesheet consumers (and claude.ai/design) import. */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import "./tokens/tokens.css";
+@import "./components/Button/Button.css";
+@import "./components/Input/Input.css";
+@import "./components/Badge/Badge.css";
+@import "./components/Heading/Heading.css";
+@import "./components/Callout/Callout.css";

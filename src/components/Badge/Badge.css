@@ -1,0 +1,25 @@
+.ds-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--ds-font-family);
+  font-size: var(--ds-font-size-sm);
+  font-weight: var(--ds-font-weight-bold);
+  line-height: 1;
+  padding: var(--ds-space-1) var(--ds-space-3);
+  border-radius: var(--ds-radius-pill);
+  white-space: nowrap;
+}
+
+/* Brand tones only — keeps the palette within the 5-color rule. */
+.ds-badge--neutral {
+  background-color: var(--ds-color-surface-muted);
+  color: var(--ds-color-text-muted);
+}
+.ds-badge--accent {
+  background-color: rgba(232, 121, 74, 0.14);
+  color: var(--ds-color-accent-active);
+}
+.ds-badge--navy {
+  background-color: rgba(31, 42, 68, 0.1);
+  color: var(--ds-color-primary);
+}
