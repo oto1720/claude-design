@@ -6,7 +6,10 @@ A small React + TypeScript design system, set up so it can be synced to
 ## What's inside
 
 - **Design tokens** — `src/tokens/tokens.css` (colors, spacing, typography, radius)
-- **Components** — `Button`, `Input`, `Badge` (each with its own `.css` + Storybook stories)
+- **Components** — each with its own `.css` + Storybook stories:
+  - Actions / status: `Button`, `Badge`
+  - Forms: `Input`, `Textarea`, `Select`, `Checkbox`, `Radio`, `Switch`
+  - Content: `Card`, `Heading`, `Callout`
 - **Storybook** — previews and docs for every component
 - **Build** — [`tsup`](https://tsup.egoist.dev/) emits `dist/` (ESM + `.d.ts` + `styles.css`)
 

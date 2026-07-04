@@ -1,0 +1,51 @@
+.ds-select {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+
+.ds-select__control {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  font-family: var(--ds-font-family);
+  font-size: var(--ds-font-size-md);
+  color: var(--ds-color-text);
+  background-color: var(--ds-color-surface);
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius-sm);
+  padding: var(--ds-space-2) var(--ds-space-5) var(--ds-space-2)
+    var(--ds-space-3);
+  min-height: 40px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ds-select__control:focus-visible {
+  outline: none;
+  border-color: var(--ds-color-accent);
+  box-shadow: var(--ds-focus-ring);
+}
+
+.ds-select__control:disabled {
+  background-color: var(--ds-color-surface-muted);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.ds-select__control--invalid {
+  border-color: var(--ds-color-accent);
+}
+
+/* Custom chevron drawn with a rotated border. */
+.ds-select__chevron {
+  position: absolute;
+  right: var(--ds-space-3);
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--ds-color-text-muted);
+  border-bottom: 2px solid var(--ds-color-text-muted);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}

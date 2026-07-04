@@ -1,52 +1,33 @@
-.ds-field {
-  display: flex;
-  flex-direction: column;
-  gap: var(--ds-space-1);
+.ds-textarea {
   font-family: var(--ds-font-family);
-}
-
-.ds-field__label {
-  font-size: var(--ds-font-size-sm);
-  font-weight: var(--ds-font-weight-bold);
-  color: var(--ds-color-text);
-}
-
-.ds-input {
-  font-family: inherit;
   font-size: var(--ds-font-size-md);
+  line-height: var(--ds-line-height);
   color: var(--ds-color-text);
   background-color: var(--ds-color-surface);
   border: 1px solid var(--ds-color-border);
   border-radius: var(--ds-radius-sm);
   padding: var(--ds-space-2) var(--ds-space-3);
-  min-height: 38px;
+  resize: vertical;
+  min-height: 96px;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.ds-input::placeholder {
+.ds-textarea::placeholder {
   color: var(--ds-color-text-muted);
 }
 
-.ds-input:focus-visible {
+.ds-textarea:focus-visible {
   outline: none;
-  border-color: var(--ds-color-primary);
+  border-color: var(--ds-color-accent);
   box-shadow: var(--ds-focus-ring);
 }
 
-.ds-input:disabled {
+.ds-textarea:disabled {
   background-color: var(--ds-color-surface-muted);
   opacity: 0.7;
   cursor: not-allowed;
 }
 
-.ds-input--invalid {
+.ds-textarea--invalid {
   border-color: var(--ds-color-accent);
-}
-
-.ds-field__hint {
-  font-size: var(--ds-font-size-sm);
-  color: var(--ds-color-text-muted);
-}
-.ds-field__hint--error {
-  color: var(--ds-color-accent-active);
 }
